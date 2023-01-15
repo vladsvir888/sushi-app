@@ -1,0 +1,28 @@
+.quantity {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid var(--pallette-black); */
+}
+
+.quantity__btn {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--pallette-black); 
+}
+
+.quantity__input {
+    padding: 8px;
+    width: 50px;
+    text-align: center;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--pallette-black);
+    border-bottom: 1px solid var(--pallette-black);
+}
+
+.quantity__icon {
+    stroke: var(--pallette-black);
+}

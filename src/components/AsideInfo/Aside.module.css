@@ -1,0 +1,18 @@
+.aside {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    line-height: 2;
+}
+
+.aside__content {
+    --offset-y: 20px;
+}
+
+@media (max-width: 767px) {
+    .aside {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+}

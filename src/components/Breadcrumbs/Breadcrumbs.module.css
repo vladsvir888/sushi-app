@@ -1,0 +1,29 @@
+.breadcrumbs__list {
+    display: flex;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.breadcrumbs__item {
+    position: relative;
+}
+
+.breadcrumbs__item:not(:last-child) {
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '»';
+}
+
+.breadcrumbs__link {
+    color: inherit;
+}
+
+.breadcrumbs__list span[aria-current="page"] {
+    color: var(--pallette-dusty-gray); 
+}

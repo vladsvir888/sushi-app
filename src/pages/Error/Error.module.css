@@ -1,0 +1,35 @@
+.error {
+    --offset-y: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 18px;
+    color: var(--pallette-black);
+}
+
+.error__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.error__heading {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.error__btn {
+    padding: 10px 20px;
+    color: var(--pallette-black);
+    border: 1px solid var(--pallette-black);
+    border-radius: 25px;
+    transition: color var(--transition), background-color var(--transition);
+}
+
+.error__btn:hover {
+    color: var(--pallette-white);
+    background-color: var(--pallette-black);
+}

@@ -1,0 +1,43 @@
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
+
+.inner > * {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-bottom: 35px;
+}
+
+.content__inner > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.weight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--pallette-dusty-gray);
+}
+
+.icon__btn {
+    cursor: help;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--pallette-dusty-gray);
+}

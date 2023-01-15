@@ -1,0 +1,11 @@
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}

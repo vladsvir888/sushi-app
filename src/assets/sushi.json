@@ -1,0 +1,162 @@
+[
+    {
+        "id": "0",
+        "title": "Эби темпура с бекон",
+        "description": "Рис, креветка темпура, тобико, бекон, терияки соус.",
+        "price": 5.80,
+        "weight": 40,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2022/08/ebi-bekon-1-300x300.jpg"
+    }, 
+    {
+        "id": "1",
+        "title": "Азия",
+        "description": "Рис, сливочный сыр, лосось, чукка салат, ореховый соус, икра летучей рыбы.",
+        "price": 4.50,
+        "weight": 45,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9724-300x300.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Акари",
+        "description": "Рис, сливочный сыр, лосось огурец, кунжут.",
+        "price": 3.90,
+        "weight": 35,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9705-300x300.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Аляска",
+        "description": "Рис, сливочный сыр, снежный краб, острый соус спайси, тунец, огурец.",
+        "price": 5,
+        "weight": 45,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9896-300x300.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Аризона",
+        "description": "Рис, сливочный сыр, лосось, угорь, огурец.",
+        "price": 3.20,
+        "weight": 30,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9802-300x300.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Бали",
+        "description": "Рис, сливочный сыр, лосось, огурец.",
+        "price": 4.40,
+        "weight": 30,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9936-300x300.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Банзай",
+        "description": "Рис, сливочный сыр, угорь, такуан, лосось.",
+        "price": 5,
+        "weight": 40,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9890-300x300.jpg"
+    },
+    {
+        "id": "7",
+        "title": "Бонито",
+        "description": "Рис, сливочный сыр, огурец, лосось терияки, стружка тунца.",
+        "price": 6.20,
+        "weight": 45,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/bonito-300x300.jpg"
+    },
+    {
+        "id": "8",
+        "title": "Бонито с лососем и авокадо",
+        "description": "Рис, сливочный сыр, авокадо, лосось, стружка тунца.",
+        "price": 3.45,
+        "weight": 25,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9827-300x300.jpg"
+    }, 
+    {
+        "id": "9",
+        "title": "Бостон",
+        "description": "Рис, сливочный сыр, лосось, огурец, икра летучей рыбы.",
+        "price": 3.30,
+        "weight": 30,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/05/IMG_0139-300x300.jpg"
+    },
+    {
+        "id": "10",
+        "title": "Вегас",
+        "description": "Рис, сливочный сыр, авокадо, лосось.",
+        "price": 4.30,
+        "weight": 40,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9740-300x300.jpg"
+    },
+    {
+        "id": "11",
+        "title": "Гавайский",
+        "description": "Рис, сливочный сыр, лосось, огурец.",
+        "price": 5,
+        "weight": 45,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9940-300x300.jpg"
+    },
+    {
+        "id": "12",
+        "title": "Грин",
+        "description": "Рис, сливочный сыр, морской гребешок, чукка салат, икра летучей рыбы, черный кунжут.",
+        "price": 4,
+        "weight": 35,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/04/IMG_0120-300x300.jpg"
+    },
+    {
+        "id": "13",
+        "title": "Делюкс",
+        "description": "Рис, сливочный сыр, авокадо, огурец, лосось татаки.",
+        "price": 4,
+        "weight": 40,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9879-300x300.jpg"
+    },
+    {
+        "id": "14",
+        "title": "Джокер",
+        "description": "Рис, сливочный сыр, лосось, авокадо.",
+        "price": 3.30,
+        "weight": 25,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9887-300x300.jpg"
+    },
+    {
+        "id": "15",
+        "title": "Дуэт",
+        "description": "Рис, лосось, угорь, тунец, икра летучей рыбы, огурец.",
+        "price": 3,
+        "weight": 25,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9716-300x300.jpg"
+    },
+    {
+        "id": "16",
+        "title": "Икура гункан",
+        "description": "Рис, нори, икра красная.",
+        "price": 3,
+        "weight": 30,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_0390-300x300.jpg"
+    },
+    {
+        "id": "17",
+        "title": "Кайри",
+        "description": "Рис, сливочный сыр, креветка, лосось, кунжут.",
+        "price": 3.50,
+        "weight": 32,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9728-300x300.jpg"
+    },
+    {
+        "id": "18",
+        "title": "Калифорния",
+        "description": "Рис, авокадо, огурец, креветка, икра летучей рыбы.",
+        "price": 4.50,
+        "weight": 35,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9787-300x300.jpg"
+    },
+    {
+        "id": "19",
+        "title": "Калифорния с лососем",
+        "description": "Рис, лосось, огурец, авокадо, икра летучей рыбы.",
+        "price": 5.30,
+        "weight": 30,
+        "imageUrl": "https://mysushi.by/wp-content/uploads/2020/06/IMG_9983-300x300.jpg"
+    }
+]

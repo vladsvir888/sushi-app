@@ -2,6 +2,7 @@ import Product from 'components/Product';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { add } from 'store/productsSlice';
+import { addToLS } from 'store/cartSlice';
 
 import ProductService from 'API/ProductService';
 
@@ -44,6 +45,12 @@ const Menu = () => {
         const result = await response.json();
 
         dispatch(add(result));
+
+        if (localStorage.getItem('cart_items')) {
+            const items = JSON.parse(localStorage.getItem('cart_items'));
+
+            dispatch(addToLS(items));
+        }
     });
 
     useEffect(() => {

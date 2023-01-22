@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToLS } from 'store/cartSlice';
 
 import cn from 'classnames';
 
@@ -22,6 +24,7 @@ const ProductDetail = () => {
     const [data, setData] = useState({});
     const navigate = useNavigate();
     const [isShow, setIsShow] = useState(false);
+    const dispatch = useDispatch();
 
     const [getData, isLoading, errorData] = useFetching(async (url) => {
         const response = await ProductService.getProduct(url);
@@ -31,6 +34,12 @@ const ProductDetail = () => {
         }
 
         setData(await response.json());
+
+        if (localStorage.getItem('cart_items')) {
+            const items = JSON.parse(localStorage.getItem('cart_items'));
+
+            dispatch(addToLS(items));
+        }
     });
 
     useEffect(() => {

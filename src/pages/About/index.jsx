@@ -1,4 +1,7 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { addToLS } from 'store/cartSlice';
 
 import { breadcrumbsAboutItems, accordionData } from 'constants';
 
@@ -7,6 +10,16 @@ import Breadcrumbs from 'components/Breadcrumbs';
 import AsideInfo from 'components/AsideInfo';
 
 const About = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if (localStorage.getItem('cart_items')) {
+            const items = JSON.parse(localStorage.getItem('cart_items'));
+
+            dispatch(addToLS(items));
+        }
+    }, []);
+
     return (
         <main className="main">
             <div className="container">

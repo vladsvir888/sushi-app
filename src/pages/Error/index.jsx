@@ -1,5 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { addToLS } from 'store/cartSlice';
 
 import cn from 'classnames';
 
@@ -15,6 +18,16 @@ const Error = ({
     isImg = true 
 }) => {
     const navigate = useNavigate();
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if (localStorage.getItem('cart_items')) {
+            const items = JSON.parse(localStorage.getItem('cart_items'));
+
+            dispatch(addToLS(items));
+        }
+    }, []);
 
     return (
         <div className={styles.error}>

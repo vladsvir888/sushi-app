@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggle } from 'store/cartModalSlice';
 import { cartTotalSelector } from 'store/selectors';
@@ -15,45 +15,8 @@ import styles from './Header.module.css';
 import Button from 'components/Button';
 
 const Header = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
     const dispatch = useDispatch();
     const total = useSelector(cartTotalSelector);
-
-    const setDark = () => {
-        setIsDarkMode(true);
-
-        localStorage.setItem('mode', 'dark');
-
-        document.documentElement.classList.add('dark');
-    }
-
-    const setLight = () => {
-        setIsDarkMode(false);
-
-        localStorage.setItem('mode', 'light');
-
-        document.documentElement.removeAttribute('class');
-    }
-
-    const switchDarkMode = () => {
-        if (!isDarkMode) { // если это не darkMode
-            setDark(); // то делаем darkMode
-        } else {
-            setLight(); // иначе lightMode
-        }
-    }
-
-    useEffect(() => {
-        const isDarkMode = localStorage.getItem('mode'); // проверяем, сохранен ли в LS режим
-
-        if (isDarkMode === null) return; // если нет - выходим
-
-        if (isDarkMode === 'dark') {
-            setDark();
-        } else {
-            setLight();
-        }
-    }, []);
 
     return (
         <header className={styles.header}>
@@ -107,10 +70,7 @@ const Header = () => {
                                 ></path>
                             </svg>
                         </Button>
-                        <DarkModeSwitcher 
-                            switchDarkMode={switchDarkMode}
-                            isdarkMode={isDarkMode}
-                        />
+                        <DarkModeSwitcher />
                     </div>
                 </div>
             </div>
